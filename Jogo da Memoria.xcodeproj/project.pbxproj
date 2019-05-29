@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E07957752299758400B316B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07957742299758400B316B1 /* AppDelegate.swift */; };
-		E07957772299758400B316B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07957762299758400B316B1 /* ViewController.swift */; };
+		E07957772299758400B316B1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07957762299758400B316B1 /* GameViewController.swift */; };
 		E079577A2299758400B316B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07957782299758400B316B1 /* Main.storyboard */; };
 		E079577C2299758700B316B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E079577B2299758700B316B1 /* Assets.xcassets */; };
 		E079577F2299758700B316B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E079577D2299758700B316B1 /* LaunchScreen.storyboard */; };
+		E07957882299A0E500B316B1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07957872299A0E500B316B1 /* Game.swift */; };
+		E079578A2299AABB00B316B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07957892299AABB00B316B1 /* Extensions.swift */; };
+		E0EA0F1B229EAEA800049A33 /* CardTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA0F1A229EAEA800049A33 /* CardTextProvider.swift */; };
+		E0EA0F1F229ECBEA00049A33 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA0F1E229ECBEA00049A33 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E07957712299758400B316B1 /* Jogo da Memoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jogo da Memoria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07957742299758400B316B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E07957762299758400B316B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E07957762299758400B316B1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E07957792299758400B316B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E079577B2299758700B316B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E079577E2299758700B316B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E07957802299758700B316B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E07957872299A0E500B316B1 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E07957892299AABB00B316B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E0EA0F1A229EAEA800049A33 /* CardTextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTextProvider.swift; sourceTree = "<group>"; };
+		E0EA0F1E229ECBEA00049A33 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		E07957732299758400B316B1 /* Jogo da Memoria */ = {
 			isa = PBXGroup;
 			children = (
-				E07957742299758400B316B1 /* AppDelegate.swift */,
-				E07957762299758400B316B1 /* ViewController.swift */,
-				E07957782299758400B316B1 /* Main.storyboard */,
-				E079577B2299758700B316B1 /* Assets.xcassets */,
-				E079577D2299758700B316B1 /* LaunchScreen.storyboard */,
+				E07957862299772700B316B1 /* Supporting Files */,
+				E07957762299758400B316B1 /* GameViewController.swift */,
+				E07957892299AABB00B316B1 /* Extensions.swift */,
 				E07957802299758700B316B1 /* Info.plist */,
+				E07957782299758400B316B1 /* Main.storyboard */,
+				E07957872299A0E500B316B1 /* Game.swift */,
+				E0EA0F1A229EAEA800049A33 /* CardTextProvider.swift */,
+				E0EA0F1E229ECBEA00049A33 /* WelcomeViewController.swift */,
 			);
 			path = "Jogo da Memoria";
+			sourceTree = "<group>";
+		};
+		E07957862299772700B316B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E079577D2299758700B316B1 /* LaunchScreen.storyboard */,
+				E07957742299758400B316B1 /* AppDelegate.swift */,
+				E079577B2299758700B316B1 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E07957772299758400B316B1 /* ViewController.swift in Sources */,
+				E07957772299758400B316B1 /* GameViewController.swift in Sources */,
+				E0EA0F1B229EAEA800049A33 /* CardTextProvider.swift in Sources */,
+				E07957882299A0E500B316B1 /* Game.swift in Sources */,
+				E0EA0F1F229ECBEA00049A33 /* WelcomeViewController.swift in Sources */,
 				E07957752299758400B316B1 /* AppDelegate.swift in Sources */,
+				E079578A2299AABB00B316B1 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
