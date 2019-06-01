@@ -11,6 +11,7 @@ import UIKit
 class GameViewController: UIViewController {
     
     lazy var game = Game(numberOfPairOfCards: buttonsArray.count / 2)
+    private let endGameSegue = "end-game"
     
     var flipCount = 0 {
         didSet {
@@ -33,8 +34,16 @@ class GameViewController: UIViewController {
         }
     }
     
+    func openEndGame() {
+        self.performSegue(withIdentifier: endGameSegue, sender: nil)
+    }
+    
     
     func updateViewFromModel() {
+        if(game.gameIsOver == true) {
+            openEndGame()
+        }
+        
         for index in game.cards.indices {
             let button = self.buttonsArray[index]
             let card = self.game.cards[index]

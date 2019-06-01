@@ -14,13 +14,24 @@ class Game {
     var cardCompared: Int?
     var lastIndexClicked: Int?
     var turn: Int = 0
+    var acertsNumber: Int = 0
+    var gameIsOver: Bool = false
     
     init(numberOfPairOfCards: Int) {
         for index in 0..<numberOfPairOfCards {
             let card = Card(identifier: index)
             self.cards += [card, card]
         }
-        cards.shuffle()
+        //cards.shuffle()
+    }
+    
+    func checkEndGame() {
+        if self.acertsNumber == 1 {
+            gameIsOver = true
+        }
+//        if (cards.count/2) == self.acertsNumber {
+//            print("end game")
+//        }
     }
     
     func chooseCard(at index: Int) {
@@ -51,6 +62,8 @@ class Game {
                 cards[index].cardState = .matched
                 cards[self.lastIndexClicked!].cardState = .matched
                 self.turn = 0
+                self.acertsNumber += 1
+                checkEndGame()
                 return
             }
         }

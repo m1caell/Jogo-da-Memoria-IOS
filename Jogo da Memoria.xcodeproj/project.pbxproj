@@ -16,6 +16,7 @@
 		E079578A2299AABB00B316B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07957892299AABB00B316B1 /* Extensions.swift */; };
 		E0EA0F1B229EAEA800049A33 /* CardTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA0F1A229EAEA800049A33 /* CardTextProvider.swift */; };
 		E0EA0F1F229ECBEA00049A33 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA0F1E229ECBEA00049A33 /* WelcomeViewController.swift */; };
+		E0EA0F24229ED59700049A33 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA0F23229ED59700049A33 /* EndGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E07957892299AABB00B316B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E0EA0F1A229EAEA800049A33 /* CardTextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTextProvider.swift; sourceTree = "<group>"; };
 		E0EA0F1E229ECBEA00049A33 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E0EA0F23229ED59700049A33 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +64,13 @@
 		E07957732299758400B316B1 /* Jogo da Memoria */ = {
 			isa = PBXGroup;
 			children = (
+				E0EA0F22229ED4E800049A33 /* screen-actions */,
 				E07957862299772700B316B1 /* Supporting Files */,
-				E07957762299758400B316B1 /* GameViewController.swift */,
 				E07957892299AABB00B316B1 /* Extensions.swift */,
 				E07957802299758700B316B1 /* Info.plist */,
 				E07957782299758400B316B1 /* Main.storyboard */,
 				E07957872299A0E500B316B1 /* Game.swift */,
 				E0EA0F1A229EAEA800049A33 /* CardTextProvider.swift */,
-				E0EA0F1E229ECBEA00049A33 /* WelcomeViewController.swift */,
 			);
 			path = "Jogo da Memoria";
 			sourceTree = "<group>";
@@ -82,6 +83,16 @@
 				E079577B2299758700B316B1 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0EA0F22229ED4E800049A33 /* screen-actions */ = {
+			isa = PBXGroup;
+			children = (
+				E07957762299758400B316B1 /* GameViewController.swift */,
+				E0EA0F1E229ECBEA00049A33 /* WelcomeViewController.swift */,
+				E0EA0F23229ED59700049A33 /* EndGameViewController.swift */,
+			);
+			path = "screen-actions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 				E07957882299A0E500B316B1 /* Game.swift in Sources */,
 				E0EA0F1F229ECBEA00049A33 /* WelcomeViewController.swift in Sources */,
 				E07957752299758400B316B1 /* AppDelegate.swift in Sources */,
+				E0EA0F24229ED59700049A33 /* EndGameViewController.swift in Sources */,
 				E079578A2299AABB00B316B1 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
